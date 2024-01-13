@@ -15,5 +15,5 @@ app.listen(PORT, () => {
 });
 
 app.get('/', (req, res) => {
-    res.send('Berhasil');
+    res.send('Web Service & RESTful API for ToDoList Application');
 });
