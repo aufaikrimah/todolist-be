@@ -103,7 +103,7 @@ const deleteAllTodos = async (req, res) => {
             where: { userId: req.user.id },
         });
 
-        res.status(204).send();
+        res.status(204).json({ message: 'Todos deleted successfully' });
     } catch (error) {
         console.error(error);
         res.status(500).json({ message: 'Internal Server Error' });

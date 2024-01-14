@@ -13,6 +13,6 @@ router.get('/all-todos', authController.authenticateUser, todoController.getAllT
 router.get('/todo/:id', authController.authenticateUser, todoController.getDetailTodo);
 router.put('/edit-todo/:id', authController.authenticateUser, todoController.updateTodo);
 router.delete('/delete-todo/:id', authController.authenticateUser, todoController.deleteTodo);
-router.delete('/todos', authController.authenticateUser, todoController.deleteAllTodos);
+router.delete('/remove-todos', authController.authenticateUser, todoController.deleteAllTodos);
 
 module.exports = router;
