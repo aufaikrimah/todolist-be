@@ -9,7 +9,7 @@ The Todo API allows you to manage your todo list. It provides endpoints for crea
 
 #### GitHub Repository: https://github.com/aufaikrimah/todolist-be.git
 
-#### Notes: The web service has been successfully deployed using Railway. However, the deployment link only works for the GET method. When I tried to use an endpoint with the POST method, it showed an "internal server error" message (a message configured in the web service). In other words, it cannot be used with the POST method, suggesting a potential issue with the database connection. Similarly, when deploying with Cyclic, the service only supports the GET method and is not available for the POST method. Therefore, if you intend to use this web service, please follow the installation guide below:
+Notes: The web service has been successfully deployed using Railway. However, the deployment link only works for the GET method. When I tried to use an endpoint with the POST method, it showed an "internal server error" message (a message configured in the web service). In other words, it cannot be used with the POST method, suggesting a potential issue with the database connection. Similarly, when deploying with Cyclic, the service only supports the GET method and is not available for the POST method. Therefore, if you intend to use this web service, please follow the installation guide below:
 
 ## Installation
 
