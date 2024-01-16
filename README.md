@@ -370,9 +370,9 @@ Updates information about a specific todo.
 }
 ```
 
-You can also install and run this web service on your local repository by following these steps:
-
 ## Installation
+
+You can also install and run this web service on your local repository by following these steps:
 
 1. Clone the repository:
 
