@@ -1,23 +1,23 @@
 {
   "development": {
-    "username": "root",
-    "password": "Rahmawati-1.",
-    "database": "todolist",
-    "host": "127.0.0.1",
+    "username": "freedb_todolist-sql",
+    "password": "$&c%4gM5JAkjPJu",
+    "database": "freedb_todolist-sql",
+    "host": "sql.freedb.tech",
     "dialect": "mysql"
   },
   "test": {
-    "username": "root",
-    "password": null,
-    "database": "database_test",
-    "host": "127.0.0.1",
+    "username": "freedb_todolist-sql",
+    "password": "$&c%4gM5JAkjPJu",
+    "database": "freedb_todolist-sql",
+    "host": "sql.freedb.tech",
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
+    "username": "freedb_todolist-sql",
+    "password": "$&c%4gM5JAkjPJu",
+    "database": "freedb_todolist-sql",
+    "host": "sql.freedb.tech",
     "dialect": "mysql"
   }
 }
