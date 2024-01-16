@@ -7,50 +7,10 @@ The Todo API allows you to manage your todo list. It provides endpoints for crea
 
 #### Base URL: https://api-todolist-byaufa-production.up.railway.app/
 
-#### GitHub Repository: https://github.com/aufaikrimah/todolist-be.git
+This base URL is used to execute all the API endpoints created in this web service application. To use it, write the base URL followed by the specific API endpoint.
+You can test the API endpoint using [Postman](https://www.postman.com/) or [Insomnia](https://insomnia.rest/).
 
-Notes: The web service has been successfully deployed using Railway. However, the deployment link only works for the GET method. When I tried to use an endpoint with the POST method, it showed an "internal server error" message (a message configured in the web service). In other words, it cannot be used with the POST method, suggesting a potential issue with the database connection. Similarly, when deploying with Cyclic, the service only supports the GET method and is not available for the POST method. Therefore, if you intend to use this web service, please follow the installation guide below:
-
-## Installation
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/aufaikrimah/todolist-be.git
-   ```
-
-2. Navigate to the repository directory:
-
-   ```bash
-   cd todolist-be
-   ```
-
-3. Install dependencies:
-
-   ```bash
-   npm install
-   ```
-
-4. Ensure that you have MySQL installed and configure the database connection in the .env and config.json files.
-
-## Running the Server
-
-To start the server, use the following command:
-
-```bash
-node app.js
-```
-
-or with nodemon:
-
-```bash
-nodemon app.js
-```
-
-The server will run at http://localhost:3000 by default. You can configure the port in the .env file if needed.
-
-
-# Endpoint API
+# API Endpoint
 
 Here is a list of available API endpoints:
 
@@ -62,7 +22,7 @@ Registers a new user.
 
 ### Request
 - Method: POST
-- URL: [http://localhost:3000/api/register](http://localhost:3000/api/register)
+- URL: [Base URL/api/register](https://api-todolist-byaufa-production.up.railway.app/api/register)
 - Description: Registers a new user with the provided credentials.
 
 **Request Body**
@@ -95,7 +55,7 @@ Logs in an existing user.
 
 ### Request
 - Method: POST
-- URL: [http://localhost:3000/api/login](http://localhost:3000/api/login)
+- URL: [Base URL/api/login](https://api-todolist-byaufa-production.up.railway.app/api/login)
 - Description: Logs in an existing user with the provided credentials.
 
 **Request Body**
@@ -138,7 +98,7 @@ Creates a new todo in the collection.
 ### Request
 
 - **Method:** POST
-- **URL:** [http://localhost:3000/api/new-todos](http://localhost:3000/api/new-todos)
+- **URL:** [Base URL/api/new-todos](https://api-todolist-byaufa-production.up.railway.app/api/new-todos)
 - **Description:** Creates a new todo using the Postman Collection v2 schema format.
 
 **Request Headers**
@@ -188,7 +148,7 @@ Retrieves all todos in the collection.
 ### Request
 
 - **Method:** GET
-- **URL:** [http://localhost:3000/api/all-todos](http://localhost:3000/api/all-todos)
+- **URL:** [Base URL/api/all-todos](https://api-todolist-byaufa-production.up.railway.app/api/all-todos)
 - **Description:** Gets all todos in the collection.
 
 **Request Headers**
@@ -233,7 +193,7 @@ Gets information about a specific todo.
 ### Request
 
 - **Method:** GET
-- **URL:** [http://localhost:3000/api/todo/11](http://localhost:3000/api/todo/11)
+- **URL:** [Base URL/api/todo/11](https://api-todolist-byaufa-production.up.railway.app/api/todo/11)
 - **Description:** Gets information about a specific todo.
 
 **Request Headers**
@@ -282,7 +242,7 @@ Updates information about a specific todo.
 ### Request
 
 - **Method:** PUT
-- **URL:** [http://localhost:3000/api/edit-todo/11](http://localhost:3000/api/edit-todo/11)
+- **URL:** [Base URL/api/edit-todo/11](https://api-todolist-byaufa-production.up.railway.app/api/edit-todo/11)
 - **Description:** Updates information about a specific todo.
 
 **Request Headers**
@@ -341,7 +301,7 @@ Updates information about a specific todo.
 ### Request
 
 - **Method:** DELETE
-- **URL:** [http://localhost:3000/api/delete-todo/5](http://localhost:3000/api/delete-todo/5)
+- **URL:** [Base URL/api/delete-todo/5](https://api-todolist-byaufa-production.up.railway.app/api/delete-todo/5)
 - **Description:** Deletes a specific todo.
 
 **Request Headers**
@@ -382,7 +342,7 @@ Updates information about a specific todo.
 ### Request
 
 - **Method:** DELETE
-- **URL:** [http://localhost:3000/api/remove-todos](http://localhost:3000/api/remove-todos)
+- **URL:** [Base URL/api/remove-todos](https://api-todolist-byaufa-production.up.railway.app/api/remove-todos)
 - **Description:** Deletes all todos.
 
 **Request Headers**
@@ -410,19 +370,52 @@ Updates information about a specific todo.
 }
 ```
 
-## Description
+You can also install and run this web service on your local repository by following these steps:
 
-Creates a collection using the Postman Collection v2 schema format. Include a collection object in the request body that contains the following required properties:
+## Installation
 
-- **info** — An object that contains the following properties:
-  - **name** — A string value that contains the collection's name.
-  - **schema** — A string that contains a URL to the collection's schema. For example, the [https://schema.getpostman.com/collection/v1](https://schema.getpostman.com/collection/v1) URL.
-- **item** — An object that contains the HTTP request and response information.
-- **request** — An object that contains the collection's request information. For a complete list of values, refer to the `definitions.request` entry in the `collection.json` schema file. If you pass an empty object for this value, the system defaults to an untitled GET request.
+1. Clone the repository:
 
-**Note:**
+   ```bash
+   git clone https://github.com/aufaikrimah/todolist-be.git
+   ```
 
-For a complete list of available property values for this endpoint, use the following references available in the `collection.json` schema file:
-- **info** object — Use the `definitions.info` entry.
-- **item** object — Use the `definitions.items` entry.
-- For all other possible values, refer to the `collection.json` schema file.
+2. Navigate to the repository directory:
+
+   ```bash
+   cd todolist-be
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Ensure that you have MySQL installed and configure the database connection in the .env and config.json files.
+   ```bash
+   npx sequelize-cli db:migrate
+   ```
+
+## Running the Server
+
+To start the server, use the following command:
+
+```bash
+node app.js
+```
+
+or with nodemon:
+
+```bash
+nodemon app.js
+```
+
+or:
+
+```bash
+npm start
+```
+
+The server will run at http://localhost:3000 by default. You can configure the port in the .env file if needed.
+Use this server port to run the API endpoints in your local repository by the server port followed by the API endpoint.
